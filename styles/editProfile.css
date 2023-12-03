@@ -1,0 +1,172 @@
+*{
+    font-family: 'Noto Sans', sans-serif;  
+}
+
+
+.buttonToggle{
+    border: none;
+    background-color: white;
+    position: absolute;
+    right: 20px;
+    width: 100px;
+}
+
+.dropdown{
+    position: relative;
+    
+    
+}
+
+.menuToggle{
+    list-style: none;
+    width: 188px;
+    height: 174px;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    margin-top: 15px;
+    display: none;
+    position: absolute;
+    top: 20px;
+    padding-left: 0;
+    left: -170px;
+    
+    
+}
+
+.show{
+    display: block;
+    right: 75px;
+    
+}
+
+.limenu{
+    width: 164.12px;
+    height: 39.15px;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-left: 42px;
+}
+
+.icons{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.textOptions{
+    color: black;
+    margin-left: 15px;
+    top: 5px;
+    position: absolute;
+}
+
+.proof{
+    position: relative;
+    
+
+}
+
+
+.stepBack{
+    display: flex;
+    width: 845.91px;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.conte{
+    width: 845.91px;
+    height: 827.56px;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+}
+
+.change{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.changeP{
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.photo{
+    width: 72px;
+    height: 72px;
+    border-radius: 8px;
+    background-color: aquamarine;
+}
+
+.photoprofile{
+    position: relative;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.photoprofile span{
+    position: absolute;
+    left: 23px;
+    top: 23px;
+    color: #828282;
+    align-items: center;
+}
+
+.photoP{
+    margin-left: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.nameDiv{
+    width: 416.93px;
+    height: 73.83px;
+    margin-bottom: 30px;
+}
+
+.name{
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.inputName{
+    border: 1px solid #828282;
+    border-radius: 12px;
+    width: 100%;
+    height: 50px;
+}
+
+.bioDiv{
+    width: 416.93px;
+    height: 113.41px;
+    margin-bottom: 30px;
+}
+
+.inputbio{
+    border: 1px solid #828282;
+    border-radius: 12px;
+    width: 100%;
+    height: 90px;
+}
+
+.saveButton{
+    width: 82px;
+    height: 38px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2F80ED;
+    color: white;
+}
+
+.footerLo{
+    width: 845.91px;
+   margin-top: 10px;
+   font-size: 14px;
+   font-weight: 400;
+   color: #828282;
+}
+
+

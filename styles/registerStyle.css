@@ -1,0 +1,102 @@
+*{
+    font-family: 'Noto Sans', sans-serif;
+    
+}
+
+.divAll{
+    width: 473.83px;
+}
+
+.divMain{
+    width: 473.83px;
+    height: 700px;
+    border: 1px solid #BDBDBD;
+    border-radius: 24px;
+    margin-top: 25px;
+}
+
+.text{
+    font-size: 18px;
+    font-weight: 600;
+    width: 318.88px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.textTwo{
+    width: 318.88px;
+    height: 66px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 60px;
+}
+
+.divInputs{
+    position: relative;
+    
+}
+
+.divInputs  span{
+    position: absolute;
+    left: 15px;
+    top: 13px;
+    color: #828282;
+}
+
+.inputEmailPass{
+    height: 48px;
+    border: 1px solid #BDBDBD;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-family: 'Noto Sans', sans-serif;
+    padding-left: 45px;
+}
+
+.buttonLogin{
+    width: 376.48px;
+    height: 38px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+
+.divSocial{
+    margin-top: 30px;
+}
+
+.social{
+    margin-right: 25px;
+}
+
+.letter{
+    margin-top: 30px;
+    font-size: 14px;
+    color: #828282;
+    
+}
+
+.letterQuestion{
+    margin: 0;
+}
+
+.register{
+    margin-left: 5px;
+    
+    border: none;
+    text-decoration: none;
+}
+
+.footerLo{
+    width: 473.83px;
+   margin-top: 10px;
+   font-size: 14px;
+   font-weight: 400;
+   color: #828282;
+}
+
+.created{
+    margin-right: 40px;
+}

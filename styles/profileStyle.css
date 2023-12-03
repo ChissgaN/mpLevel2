@@ -1,0 +1,171 @@
+*{
+    font-family: 'Noto Sans', sans-serif;
+    
+}
+
+.buttonToggle{
+    border: none;
+    background-color: white;
+    position: absolute;
+    right: 20px;
+    width: 100px;
+}
+
+.dropdown{
+    position: relative;
+    
+}
+
+.menuToggle{
+    list-style: none;
+    width: 188px;
+    height: 174px;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    margin-top: 15px;
+    display: none;
+    position: absolute;
+    top: 15px;
+    padding-left: 0%;
+    left: -160px;
+    
+}
+
+.show{
+    display: block;
+    
+}
+
+.limenu{
+    width: 164.12px;
+    height: 39.15px;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-left: 42px;
+   
+      
+}
+
+.icons{
+    width: 20px;
+    height: 20px;
+    
+}
+
+.textOptions{
+    color: black;
+    margin-left: 15px;
+    position: absolute;
+    top: 5px;
+   
+}
+
+.proof{
+    position: relative;
+}
+
+.personal{
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.basic{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.tabla{
+    width: 845.91px;
+    height: 580.54px;
+    border: 1px solid #BDBDBD;
+    border-radius: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+}
+
+.enca{
+   width: 845.38px;
+   height: 100px;
+   align-items: center;
+   border-bottom: 1px solid #BDBDBD;
+}
+
+.buttonEdit{
+    width: 95.34px;
+    height: 38px;
+    border: 1px solid #BDBDBD;
+    border-radius: 12px;
+    color: #828282;
+    background-color: white;
+    margin-right: 35px;
+    
+}
+
+.HeaderTable{
+    margin-left: 35px;
+    align-items: center;
+}
+
+.profile{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 0%
+}
+
+.some{
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 0%;
+}
+
+.divEnd{
+    width: 845.38px;
+}
+
+.name{
+    display: inline-block;
+    width: 215px;
+    height: 18px;
+    margin-left: 35px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.file{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid #BDBDBD;
+
+}
+
+.fileTwo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 78.108px;
+    border-bottom: 1px solid #BDBDBD;
+}
+
+.fileLast{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 78.108px;
+}
+
+.tableTwo{
+    width: 845.38px;
+}
+
+.photo{
+    width: 72px;
+    height: 72px;
+    border-radius: 8px;
+    margin-left: 20px;
+    align-items: center;
+    background-color: blue;
+    align-items: left;
+}
