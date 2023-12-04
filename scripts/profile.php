@@ -38,7 +38,7 @@ if(isset($_SESSION["proof"])) {
         <img src="../assets/devchallenges.svg" alt="DevChallenges Logo">
 
         <div class="me-5 mt-3 dropdown">
-            <button class="buttonToggle" id="buttonToggle"><?php echo $passNew['name'] . ' user'?></button>
+            <button class="buttonToggle" id="buttonToggle"><?php echo $passNew['name']?><span class="material-symbols-outlined iconToggle">expand_more</span></button>
             <ul class="menuToggle" id="menuToggle">
                 <div class="proof">
                 <li class="limenu"><span class="material-symbols-outlined icons">person
@@ -74,7 +74,7 @@ if(isset($_SESSION["proof"])) {
             <div class="tableTwo">
             <tr class="file">
                 <td class="name">PHOTO</td>
-                <td class="photo">Foto perfil</td>
+                <td class="photo" style="background-image: url('<?php echo $passNew['photo']; ?>');"></td></td>
             </tr>
             <tr class="fileTwo"> 
                 <td class="name">NAME</td>

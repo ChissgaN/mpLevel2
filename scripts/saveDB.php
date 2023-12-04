@@ -11,13 +11,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['contrasena'];
     $contra = password_hash($password, PASSWORD_DEFAULT);
 
+    $base_url = '../photos/';
+    $tmp = $_FILES['photo']['tmp_name'];
+    $imgName = $_FILES['photo']['name'];
+    $ext = pathinfo($imgName, PATHINFO_EXTENSION);
+    $url = $base_url . "profile$user_id." . $ext;
+    move_uploaded_file($tmp, $url);
 
-    $query = "UPDATE usu SET `email` =?, `contrasena` =?, `name` =?, `bio` =?, `phone` =? WHERE id =?";
+
+    $query = "UPDATE usu SET `email` =?, `contrasena` =?, `photo` =?, `name` =?, `bio` =?, `phone` =? WHERE id =?";
 
     
     try {
         $stmt = $pdo->prepare($query);
-        $res = $stmt->execute([$email, $contra, $name, $bio, $phone, $tool]);
+        $res = $stmt->execute([$email, $contra, $url, $name, $bio, $phone, $tool]);
 
         if ($res) {
             $query = "SELECT * FROM usu WHERE id = ?";

@@ -36,7 +36,7 @@
         <form action="./scripts/register.php" method="POST">
         <div class="divInputs">
             <span class="material-symbols-outlined">mail</span>
-            <input name="email" placeholder="Email" class=" form-control w-356.48 inputEmailPass">
+            <input name="email" placeholder="Email" type="email" class=" form-control w-356.48 inputEmailPass">
         </div>      
         <div  class="divInputs">
             <span class="material-symbols-outlined">lock</span>

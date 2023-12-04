@@ -22,6 +22,7 @@ try {
         header('location: ./profile.php');
     } else {
         echo 'contrase;a incorrecta';
+        header('location: ./login.php');
     }
 
     

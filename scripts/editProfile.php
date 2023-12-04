@@ -1,4 +1,5 @@
 <?php
+    require_once './cone.php';
     session_start();
     if(isset($_SESSION['proof'])) {
         $passNew = $_SESSION['proof'];
@@ -41,7 +42,7 @@
         <img src="../assets/devchallenges.svg" alt="DevChallenges Logo">
 
         <div class="me-5 mt-3 dropdown">
-            <button class="buttonToggle" id="buttonToggle"><?php echo $passNew['name'] . ' user'?></button>
+            <button class="buttonToggle" id="buttonToggle"><?php echo $passNew['name']?><span class="material-symbols-outlined iconToggle">expand_more</span></button>
             <ul class="menuToggle" id="menuToggle">
                 <div class="proof">
                 <li class="limenu"><span class="material-symbols-outlined icons">person
@@ -66,17 +67,30 @@
         <a href="./profile.php" class="stepBack">
             < Back</a>
     </div>
-    <form action="./saveDB.php" method="POST" class="d-flex align-items-center justify-content-center">
+    <form action="./saveDB.php" method="POST" enctype="multipart/form-data" class="d-flex align-items-center justify-content-center">
         <div class="conte">
             <header class="ms-5 mt-4">
                 <h2 class="change">Change Info</h2>
                 <p class="changeP">Changes will be reflected to every services</p>
             </header>
             <div class="ms-5 photoprofile d-flex">
-                <span class="material-symbols-outlined">photo_camera</span>
-                <p class="photo">foto</p>
-                <p class="photoP">CHANGE PHOTO</p>
+                <?php if(!empty($result) && isset($result['photo']) && $result['photo'] != '') : ?>
+                <img src="<?php echo $result['photo'] ?>" alt="Profile Photo" class="photo">
+                <?php endif ?>
+                   
             </div>
+
+            <div class="ms-5 mb-3">
+                <label for="photo" class="custom-file-upload">
+                <input type="file"  name="photo" id="photo" class="file-input">
+                <div class="photoContainer">
+                    <span class="material-symbols-outlined spanC">photo_camera</span> 
+                    <span class="photo" style="background-image: url('<?php echo $passNew['photo']; ?>');" ></span>
+                    <span class="photoP">CHANGE PHOTO</span>
+                </div>
+                </label>
+            </div>
+
             <div class="ms-5 nameDiv">
                 <p class="name">Name</p>
                 <input name="name" class="inputName" type="text" placeholder="Enter your name...">
@@ -91,7 +105,7 @@
             </div>
             <div class="ms-5 nameDiv">
                 <p class="name">Email</p>
-                <input name="email" class="inputName" type="text" placeholder="Enter your email...">
+                <input name="email" class="inputName" type="email" placeholder="Enter your email...">
             </div>
             <div class="ms-5 nameDiv">
                 <p class="name">Password</p>

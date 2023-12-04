@@ -31,6 +31,12 @@
     
 }
 
+.iconToggle{
+    border: none;
+    background-color: white;
+    position: absolute;
+}
+
 .show{
     display: block;
     
@@ -163,9 +169,8 @@
 .photo{
     width: 72px;
     height: 72px;
+    border: 1px solid #828282;
     border-radius: 8px;
-    margin-left: 20px;
     align-items: center;
-    background-color: blue;
     align-items: left;
 }
