@@ -97,3 +97,29 @@
 .divAll{
     width: 473.83px;
 }
+
+/* Dark mode */
+
+#darkModeToggle{
+    border: none;
+    background: none;
+    border-radius: 8px;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .divMain {
+    border-color: #555;
+}
+
+.dark-mode .text,
+.dark-mode .textTwo,
+.dark-mode .inputEmailPass,
+.dark-mode .buttonLogin,
+.dark-mode .letter,
+.dark-mode .footerLo {
+    color: #fff;
+}

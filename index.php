@@ -16,6 +16,7 @@
     <!-- CSS styles -->
     <link rel="stylesheet" href="../styles/registerStyle.css">
 
+
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,8 +26,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <title>Register</title>
+
+    <?php
+    $darkModeActive = false;
+    $darkModeClass = $darkModeActive ? 'dark-mode' : '';
+    ?>
+
 </head>
-<body class="d-flex align-items-center justify-content-center">
+<body class="d-flex align-items-center justify-content-center <?php echo $darkModeClass; ?>">
     <div class="d-flex flex-column align-items-center justify-content-center divAll">
         <div class="p-5 divMain">
             <img src="../assets/devchallenges.svg" alt="DevChallenges Logo">
@@ -57,12 +64,15 @@
                 <p class="letterQuestion">Don’t have an account yet?</p>
                 <a href="./scripts/login.php" class="register">Login</a>
             </div>
+
+            <button id="darkModeToggle"><span  class="material-symbols-outlined dark-mode-toggle moon">dark_mode</span></button>
 </div>
 
 <div class="d-flex  justify-content-between footerLo">
     <p class="created">created by ChissgaN</p>
     <p>devChallenges.io</p>
 </div>
-   
+
+<script src="./javaScripts/dark.js"></script>
 </body>
 </html>

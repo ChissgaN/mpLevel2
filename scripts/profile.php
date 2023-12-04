@@ -110,7 +110,7 @@ if(isset($_SESSION["proof"])) {
     </div>
 
     <!-- JavaScript -->
-    <script src="../main.js"></script>
+    <script src="../javaScripts/main.js"></script>
     
 </body>
 

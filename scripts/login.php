@@ -26,9 +26,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <title>Authentication App</title>
+
+    <?php
+    $darkModeActive = false; 
+    $darkModeClass = $darkModeActive ? 'dark-mode' : '';
+    ?>
 </head>
 
-<body class="d-flex align-items-center justify-content-center">
+<body class="d-flex align-items-center justify-content-center <?php echo $darkModeClass; ?>">
 
     <div class="d-flex flex-column align-items-center justify-content-center divAll">
         <div class=" p-5 divMain">
@@ -59,12 +64,17 @@
                 <p class="letterQuestion">Don’t have an account yet?</p>
                 <a href="../index.php" class="register">Register</a>
             </div>
+
+            <button id="darkModeToggle"><span  class="material-symbols-outlined dark-mode-toggle moon">dark_mode</span></button>
             
     </div>
         <div class="d-flex  justify-content-between footerLo">
                 <p class="created">created by ChissgaN</p>
                 <p>devChallenges.io</p>
         </div>
+
+<script src="../javaScripts/darkLogin.js"></script>
+</body>
 </body>
 
 </html>
