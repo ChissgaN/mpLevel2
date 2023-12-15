@@ -61,7 +61,7 @@
                 <img src="../assets/Gihub.svg" alt="gihub">
             </div>
             <div class="d-flex align-items-center justify-content-center letter">
-                <p class="letterQuestion">Don’t have an account yet?</p>
+                <p class="letterQuestion">Don`t have an account yet?</p>
                 <a href="./scripts/login.php" class="register">Login</a>
             </div>
 

@@ -20,7 +20,7 @@ if($_SERVER['REQUEST_METHOD']=== 'POST'){
                 $result = $cone->fetch(PDO::FETCH_ASSOC);
                 session_start();
                 $_SESSION['proof'] = $result;
-                header('location: ../scripts./profile.php');
+                header('location: ../scripts/profile.php');
                 
             } catch (PDOException $e) {
                 echo 'Error al registrar el usuario: ' . $e->getMessage();
